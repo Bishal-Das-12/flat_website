@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a house</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px) and (min-width: 1001px)" href="/static/tab.css">
+    <link rel="stylesheet" media="screen and (max-width: 1000px) and (min-width: 0px)" href="/static/mobile.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="home">
+        <section class="navbar h_nav">
+            <div class="left">
+                <img src="static/img/logo.png" alt="LOGO">
+            </div>
+            <nav class="nav v_class" >
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="/team.html" target="_blank">Our team</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+            </nav>
+            <div class="right v_class">
+                <input type="text" name="search" id="search">
+                <button id="btn_src">Search</button>
+            </div>
+        </section>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        <div id="main">
+            <h1 class="h-primary h-primary_resp">Welcome to our website</h1>
+            <p class="h-secondary h-secondary_resp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste!</p>
+            <p class="h-secondary h-secondary_resp">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+    </div>
+
+    <div id="services">
+        <h1 class="h-primary h-primary_resp">Our Services</h1>
+        <div class="box">
+            <div class="box_content h-secondary h-secondary_resp_p">
+                <h2>The end of your search here</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci neque, similique eos ratione quos nulla hic porro, odit dolorum eum delectus illum amet corrupti voluptas aliquam reiciendis assumenda quibusdam vero? Repellendus repudiandae, in doloremque veniam cum ipsum est quod voluptas assumenda nemo dolorum asperiores tenetur soluta at nobis voluptates vero ipsam sed? Quam eos necessitatibus architecto iste inventore! Ea natus aspernatur animi earum perferendis distinctio, ipsa deserunt exercitationem saepe qui voluptatum laboriosam magni ad alias et assumenda! Fugit aliquam suscipit libero accusamus ratione, expedita dolorum esse. Officiis, cupiditate.</p>
+            </div>
+            <img src="static/img/1.jpg" alt="IMG">
+        </div>
+        <div class="box">
+            <img src="static/img/2.jpg" alt="IMG">
+            <div class="box_content h-secondary h-secondary_resp">
+                <h2>Find your dream house</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci neque, similique eos ratione quos nulla hic porro, odit dolorum eum delectus illum amet corrupti voluptas aliquam reiciendis assumenda quibusdam vero? Repellendus repudiandae, in doloremque veniam cum ipsum est quod voluptas assumenda nemo dolorum asperiores tenetur soluta at nobis voluptates vero ipsam sed? Quam eos necessitatibus architecto iste inventore! Ea natus aspernatur animi earum perferendis distinctio, ipsa deserunt exercitationem saepe qui voluptatum laboriosam magni ad alias et assumenda! Fugit aliquam suscipit libero accusamus ratione, expedita dolorum esse. Officiis, cupiditate</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box_content h-secondary h-secondary_resp">
+                <h2>Best interior designs</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci neque, similique eos ratione quos nulla hic porro, odit dolorum eum delectus illum amet corrupti voluptas aliquam reiciendis assumenda quibusdam vero? Repellendus repudiandae, in doloremque veniam cum ipsum est quod voluptas assumenda nemo dolorum asperiores tenetur soluta at nobis voluptates vero ipsam sed? Quam eos necessitatibus architecto iste inventore! Ea natus aspernatur animi earum perferendis distinctio, ipsa deserunt exercitationem saepe qui voluptatum laboriosam magni ad alias et assumenda! Fugit aliquam suscipit libero accusamus ratione, expedita dolorum esse. Officiis, cupiditate</p>
+            </div>
+            <img src="static/img/3.jpg" alt="IMG">
+        </div>
+    </div>
+    <section id="contact">
+        <h1 class="h-primary center h-primary_resp">Contact Us</h1>
+        <div id="contact-box">
+            <form action="/index.html", method="post">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="phone" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button class="btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.MyOnlineHome.com | All rights reserved!
+        </div>
+    </footer>
+    <script src="/static/jquery-3.5.1.min.js"></script>
+    <script src="/static/idangerous.swiper.min.js"></script>
+    <script src="/static/toggle.js"></script>
+</body>
+</html>

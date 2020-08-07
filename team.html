@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Find a house</title>
+    <link rel="stylesheet" href="static/swiper.min.css">
+    <link rel="stylesheet" href="static/team.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="home">
+        <section class="navbar h_nav">
+            <div class="left">
+                <img src="static/img/logo.png" alt="LOGO">
+            </div>
+            <nav class="nav v_class">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/index.html#services">Services</a></li>
+                    <li><a href="#">Our team</a></li>
+                    <li><a href="/index.html#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="right v_class">
+                <input type="text" name="search" id="search">
+                <button id="btn_src">Search</button>
+            </div>
+        </section>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="name">
+            <h1 class="center">OUR TEAM</h1>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="static/img/team/5.JPG">
+                    </div>
+                    <div class="detail">
+                        <h2>Bishal<br><span>CEO</span></h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="static/img/team/8.JPG">
+                    </div>
+                    <div class="detail">
+                        <h2>Kangkana<br><span>HOD</span></h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="static/img/team/2.jpeg">
+                    </div>
+                    <div class="detail">
+                        <h2>Chayank<br><span>Senior developer</span></h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="static/img/team/3.jpeg">
+                    </div>
+                    <div class="detail">
+                        <h2>Asifa<br><span>Finance manager</span></h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="static/img/team/1.JPG">
+                    </div>
+                    <div class="detail">
+                        <h2>Dhritismita<br><span>Interior Designer</span></h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="static/img/team/4.JPG">
+                    </div>
+                    <div class="detail">
+                        <h2>Evana<br><span>Supervisor</span></h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="static/img/team/6.JPG">
+                    </div>
+                    <div class="detail">
+                        <h2>Arunima<br><span>Share holder</span></h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="static/img/team/7.JPG">
+                    </div>
+                    <div class="detail">
+                        <h2>Debarun<br><span>Junior Developer</span></h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.MyOnlineHome.com | All rights reserved!
+        </div>
+    </footer>
+    <script src="static/toggle.js"></script>
+    <script src="static/jquery-3.5.1.min.js"></script>
+    <script src="/static/idangerous.swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+</body>
+
+</html>

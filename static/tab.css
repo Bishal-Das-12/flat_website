@@ -1,0 +1,17 @@
+/* Tab */
+
+@media only screen and (max-width: 1200px) and (min-width: 1001px){
+    #services{
+        height: 1350px;
+        width: 100%;
+    }
+    .h-primary{
+        font-family: 'Bree Serif', serif;
+        font-size: 3rem;
+        padding: 12px;
+    }
+    .h-secondary{
+        font-family: 'Bree Serif', serif;
+        font-size: 1.6rem;
+    }
+};

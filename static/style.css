@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.menubtn{
+    display: none;
+}
+/* NAVBAR */
+#home{
+    height: 700px;
+    width: 100%;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    height: 700px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url(/static/img/bg1.jpg)  center center/cover no-repeat;
+    z-index: -1;
+    opacity: 0.8;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    height: 68px;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.3;
+}
+.left{
+    display: flex;
+    padding: 7px 0px;
+}
+.left img{
+    height: 60px;
+    width: auto;
+    margin: auto;
+    margin-left: 14px;
+    filter: invert(1);
+}
+.nav{
+    margin-right: auto;
+}
+.nav ul{
+    display: flex;
+    margin: 15px 15px;
+}
+.nav ul li{
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    margin: 8px 21px;
+    font-size: 1.8rem;
+    color: white;
+    position: relative;
+}
+.nav ul li a::before{
+    content: "";
+    position: absolute;
+    top: 95%;
+    left: 0;
+    height: 4px;
+    width: 0;
+    border-bottom: 2px solid white;
+    transition: all 0.2s linear;
+}
+.nav ul li a:hover:before{
+    width: 100%;
+}
+.right{
+    margin-top: 23px;
+    margin-right: 34px;
+}
+.right input{
+    margin: 0px 2px;
+    padding: 2px;
+    border-radius: 7px;
+}
+.right #btn_src {
+    margin: 0px 2px;
+    padding: 2px 4px;
+    border-radius: 7px;
+    outline: none;
+    background: transparent;
+    color: white;
+    border: 1.5px solid white;
+    cursor: pointer;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 160px;
+}
+#main h1 {
+    margin-bottom: 6px;
+    color: white;
+}
+#main p{
+    color: white;
+}
+
+/* SERVICES */
+
+#services{
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    width: 100%;
+    background-image: linear-gradient(rgba(124, 201, 236, 0.966), rgb(145, 145, 145));
+}
+#services h1{
+    text-align: center;
+}
+.box{
+    display: flex;
+}
+.box_content{
+    display: flex;
+    flex-direction: column;
+}
+.box img{
+    height: 150px;
+    width: auto;
+    padding: 0px;
+    margin: 30px 34px;
+    border-radius: 18px;
+}
+.box_content h2{
+    padding: 10px 45px;
+    font-size: 30px;
+}
+.box_content p{
+    padding: 0px 50px;
+    margin-bottom: 36px;
+    font-size: 21px;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('/static/img/bg3.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7px;
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2rem;
+}
+
+.btn{
+    padding: 6px 12px;
+    border: 2px solid white;
+    background-color: rgb(206, 112, 112);
+    color: white;
+    margin: 11px 261px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+    outline: none;
+    display: block;
+    margin: auto;
+}
+.btn:hover{
+    background-color: brown;
+}
+
+.center{
+    text-align: center;
+}
+
+/* Small laptop */
+
+@media only screen and (max-width: 1505px) and (min-width: 1200px){
+    #services{
+        height: 1150px;
+        width: 100%;
+    }
+};
+
+/* Tab */
+
+/* @media only screen and (max-width: 1200px) and (min-width: 1001px){
+    #services{
+        height: 1550px;
+        width: 100%;
+    }
+    .h-primary{
+        font-family: 'Bree Serif', serif;
+        font-size: 3rem;
+        padding: 12px;
+    }
+    .h-secondary{
+        font-family: 'Bree Serif', serif;
+        font-size: 1.3rem;
+    }
+}; */

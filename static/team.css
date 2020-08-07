@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.menubtn{
+    display: none;
+}
+/* NAVBAR */
+#home{
+    height: 95vh;
+    width: 100%;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    height: 97vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url(/static/img/bg1.jpg)  center center/cover no-repeat;
+    z-index: -1;
+    opacity: 0.8;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    height: 68px;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.3;
+}
+.left{
+    display: flex;
+    padding: 7px 0px;
+}
+.left img{
+    height: 60px;
+    width: auto;
+    margin: auto;
+    margin-left: 14px;
+    filter: invert(1);
+}
+.nav{
+    margin-right: auto;
+}
+.nav ul{
+    display: flex;
+    margin: 15px 15px;
+}
+.nav ul li{
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    margin: 8px 21px;
+    font-size: 1.8rem;
+    color: white;
+    position: relative;
+}
+.nav ul li a::before{
+    content: "";
+    position: absolute;
+    top: 95%;
+    left: 0;
+    height: 4px;
+    width: 0;
+    border-bottom: 2px solid white;
+    transition: all 0.2s linear;
+}
+.nav ul li a:hover:before{
+    width: 100%;
+}
+.right{
+    margin-top: 29px;
+    margin-right: 34px;
+}
+.right input{
+    margin: 0px 2px;
+    padding: 2px;
+    border-radius: 7px;
+}
+.right #btn_src {
+    margin: 0px 2px;
+    padding: 4px 5px;
+    border-radius: 7px;
+    outline: none;
+    background: transparent;
+    color: white;
+    border: 1.5px solid white;
+    cursor: pointer;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2rem;
+}
+
+
+.center{
+    text-align: center;
+}
+
+/* Mobile */
+@media only screen and (max-width: 1000px){
+    #home{
+        height: 95vh;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        height: 302px;
+        transition: all 0.5s ease-out;
+    }
+    .nav{
+        margin: 0;
+    }
+    .nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .left img{
+        margin-left: 0;
+    }
+    .right{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .right #btn_src{
+        margin: 7px auto;
+        width: 60%;
+    }
+    
+    .burger{
+        position: absolute;
+        cursor: pointer;
+        right: 3%;
+        top: 15px;
+    }
+    .line{
+        width: 30px;
+        background-color: white;
+        height: 4px;
+        margin: 3px 3px;
+        border-radius: 600px;
+    }
+    .v_class{
+        opacity: 0;
+        transition: all 0.5s ease-out;
+    }
+    .h_nav{
+        height: 72px;
+    }
+    
+    #main{
+        margin: 12px;
+    }
+    
+    .h-primary_resp{
+        font-family: 'Bree Serif', serif;
+        font-size: 2.8rem;
+        padding: 12px;
+    }
+    
+    .h-secondary_resp{
+        font-family: 'Bree Serif', serif;
+        font-size: 1.2rem;
+    }
+    .h-secondary_resp_p{
+        font-family: 'Bree Serif', serif;
+        font-size: 0.7rem;
+    }
+    footer{
+        height: 3vh;
+    }
+};
+
+
+
+/* Swiper */
+
+/* body{
+    background: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}*/
+
+.swiper-container{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    margin-top: 65px;
+    background-position: center;
+    background-size: cover;
+    width: 318px;
+    height: 420px;
+    background-color: white;
+    text-align: center;
+}
+.imgBx img{
+    width: 318px;
+    height: 340px;
+}
+
+
+.name h1{
+    color: white;
+    font-size: 45px;
+    margin-top: 18px;
+}
+.detail h2 span{
+    color: red;
+}
